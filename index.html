@@ -31,10 +31,20 @@
             background: #4f8ef7;
             color: white;
             display: grid;
+            grid-template-areas: 
+                "logo links";
             align-items: center;
-            padding-left: 16px;
+            padding-left: 26px;
             font-size: 1.5em;
         }
+
+        .header ul {
+            display: flex;
+            gap: 35px;
+            margin-left: auto;
+            padding-right: 26px;
+        }
+
         .sidebar {
             grid-area: sidebar;
             background: #e3e7ef;
@@ -58,7 +68,14 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <div class="header">Dashboard Header</div>
+        <div class="header">
+            Dashboard Header
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </div>
         <div class="sidebar">
             <strong>Sidebar</strong>
             <ul>
