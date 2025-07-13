@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        ul,ol {
+            list-style: none;
+        }
+
+        div.dashboard-container {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "sidebar main"
+            "footer footer";
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 15% 75% 10%;
+            height: 100dvh;
+        }
+
+        .header {
+            grid-area: header;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .main {
+            grid-area: main;
+        }
+        .footer {
+            grid-area: footer;
+        }
     </style>
 </head>
 <body>
